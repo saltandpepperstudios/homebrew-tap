@@ -5,20 +5,20 @@
 class Skt < Formula
   desc "SaaSKit CLI tool for various helpful commands"
   homepage "https://github.com/saltandpepperstudios/saaskitcli"
-  version "0.9.0"
+  version "0.10.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/saltandpepperstudios/saaskitcli/releases/download/v0.9.0/saaskitcli_Darwin_x86_64.tar.gz"
-      sha256 "27ae7aa4cc2511eb4659bc11879bc22dc6636e0f3db96bc234783f768eba4b38"
+      url "https://github.com/saltandpepperstudios/saaskitcli/releases/download/v0.10.0/saaskitcli_Darwin_x86_64.tar.gz"
+      sha256 "7f1b4a34cd545a9f2266aac6119f0a0294e88fe48aa17cc7fbae988cbc2d8e1b"
 
       def install
         bin.install "skt"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/saltandpepperstudios/saaskitcli/releases/download/v0.9.0/saaskitcli_Darwin_arm64.tar.gz"
-      sha256 "0085d3ee4dbbf49d47d56aad9593fcf812a92dadd4f1f60bed6d7e5cb8d39ea4"
+      url "https://github.com/saltandpepperstudios/saaskitcli/releases/download/v0.10.0/saaskitcli_Darwin_arm64.tar.gz"
+      sha256 "046ebb12bd96555c24b86c494de0caa61d79685e7cab736ee2eac2a9f6d954b9"
 
       def install
         bin.install "skt"
@@ -29,8 +29,8 @@ class Skt < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/saltandpepperstudios/saaskitcli/releases/download/v0.9.0/saaskitcli_Linux_x86_64.tar.gz"
-        sha256 "c21aed979e128a5bf0a60edb65a6ff58b19d063c42375b3b07b78489369f9a23"
+        url "https://github.com/saltandpepperstudios/saaskitcli/releases/download/v0.10.0/saaskitcli_Linux_x86_64.tar.gz"
+        sha256 "467b61ad35f2b7e02f7b33d96c203ecf0fa9a1484f6e552fd0d16e01ee2e5c31"
 
         def install
           bin.install "skt"
@@ -39,8 +39,8 @@ class Skt < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/saltandpepperstudios/saaskitcli/releases/download/v0.9.0/saaskitcli_Linux_arm64.tar.gz"
-        sha256 "3c72a7bf28d35643616f993d8aa03f9bca0d075dfab6754819cec26a92897fd8"
+        url "https://github.com/saltandpepperstudios/saaskitcli/releases/download/v0.10.0/saaskitcli_Linux_arm64.tar.gz"
+        sha256 "3fd3b465d031947831d0695de009ca8b7e53d5ff5c31957df89019faff9e5793"
 
         def install
           bin.install "skt"
